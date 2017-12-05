@@ -36,7 +36,7 @@ install -m 644 node_exporter %{buildroot}/etc/sysconfig/
 /etc/sysconfig/node_exporter
 
 %pre
-/usr/sbin/useradd node_exporter -s /sbin/nologin
+getent passwd USERNAME >/dev/null || /usr/sbin/useradd node_exporter -s /sbin/nologin
 
 %postun
 /usr/sbin/userdel node_exporter
