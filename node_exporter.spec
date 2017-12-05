@@ -1,6 +1,6 @@
 Name: node_exporter
 Version: 0.15.1
-Release: 4
+Release: 5
 Summary: prometheus node_exporter
 License: Apache-2.0
 URL: https://github.com/lattebank/node_exporter
