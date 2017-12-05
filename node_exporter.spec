@@ -1,6 +1,6 @@
 Name: node_exporter
 Version: 0.15.1
-Release: 5
+Release: 6
 Summary: prometheus node_exporter
 License: Apache-2.0
 URL: https://github.com/lattebank/node_exporter
@@ -36,7 +36,7 @@ install -m 644 node_exporter %{buildroot}/etc/sysconfig/
 /etc/sysconfig/node_exporter
 
 %pre
-getent passwd USERNAME >/dev/null || /usr/sbin/useradd node_exporter -s /sbin/nologin
+getent passwd node_exporter >/dev/null || /usr/sbin/useradd node_exporter -s /sbin/nologin
 
 %postun
 /usr/sbin/userdel node_exporter
