@@ -1,13 +1,13 @@
 Name: node_exporter
 Version: 0.15.1
-Release: 3
+Release: 4
 Summary: prometheus node_exporter
 License: Apache-2.0
 URL: https://github.com/lattebank/node_exporter
 
 Source0: https://github.com/prometheus/node_exporter/releases/download/v%{version}/node_exporter-%{version}.linux-amd64.tar.gz
-Source1: https://raw.githubusercontent.com/prometheus/node_exporter/v%{version}/examples/systemd/node_exporter.service
-Source2: https://raw.githubusercontent.com/prometheus/node_exporter/v%{version}/examples/systemd/sysconfig.node_exporter
+Source1: node_exporter.service
+Source2: sysconfig.node_exporter
 
 %description
 prometheus node_exporter
